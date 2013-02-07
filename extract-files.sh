@@ -229,7 +229,8 @@ copy_files_to_obj_lib "$COMMON_OBJ_LIBS" ""
 
 DEVICE_BINS="
     abtfilt
-    akmd8963    
+    akmd8963
+    amploader
     bridgemgrd
     fmconfig
     fm_qsoc_patches
