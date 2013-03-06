@@ -148,70 +148,70 @@ copy_local_files()
 
 DEVICE_LIBS="
 	libaudioeq.so
-    libauth.so
-    libcm.so
-    libcommondefs.so
-    libdiag.so
+	libauth.so
+	libcm.so
+	libcommondefs.so
+	libdiag.so
 	libDivxDrm.so
-    libdivxdrmdecrypt.so
+	libdivxdrmdecrypt.so
 	libdsi_netctrl.so
 	libdsm.so
 	libdss.so
 	libdsucsd.so
 	libdsutils.so
-    libgps.utils.so
-    libidl.so
-    libloc_adapter.so
-    libloc_api-rpc-qc.so
-    libloc_eng.so
-    libloc_ext.so
-    libmmipl.so
+	libgps.utils.so
+	libidl.so
+	libloc_adapter.so
+	libloc_api-rpc-qc.so
+	libloc_eng.so
+	libloc_ext.so
+	libmmipl.so
 	libmmparser.so
 	libmmosal.so
-    libnetmgr.so
-    libnv.so
-    liboemcamera.so
-    libgemini.so
-    liboncrpc.so
-    libpbmlib.so
-    libqdi.so
-    libqdp.so
-    libqmi.so
-    libqmiservices.so
-    libqueue.so
-    libril-qc-1.so
-    libril-qc-qmi-1.so
-    libril-qcril-hook-oem.so
-    libwms.so
-    libwmsts.so
-    libCommandSvc.so
+	libnetmgr.so
+	libnv.so
+	liboemcamera.so
+	libgemini.so
+	liboncrpc.so
+	libpbmlib.so
+	libqdi.so
+	libqdp.so
+	libqmi.so
+	libqmiservices.so
+	libqueue.so
+	libril-qc-1.so
+	libril-qc-qmi-1.so
+	libril-qcril-hook-oem.so
+	libwms.so
+	libwmsts.so
+	libCommandSvc.so
 	libmmgsdilib.so
 	libmm-adspsvc.so
-    libmm-abl-oem.so
-    libmm-abl.so
-    libOmxAacDec.so
-    libOmxAmrEnc.so
-    libOmxEvrcDec.so
-    libOmxOn2Dec.so
-    libOmxrv9Dec.so
-    libOmxWmvDec.so
-    libOmxAacEnc.so
-    libOmxAmrRtpDec.so
-    libOmxEvrcEnc.so
-    libOmxQcelp13Dec.so
-    libOmxVidEnc.so
-    libOmxAdpcmDec.so
-    libOmxAmrwbDec.so
-    libOmxEvrcHwDec.so
-    libOmxMp3Dec.so
-    libOmxQcelp13Enc.so
-    libOmxVp8Dec.so
-    libOmxAmrDec.so
-    libOmxCore.so
-    libOmxH264Dec.so
-    libOmxMpeg4Dec.so
-    libOmxQcelpHwDec.so
-    libOmxWmaDec.so
+	libmm-abl-oem.so
+	libmm-abl.so
+	libOmxAacDec.so
+	libOmxAmrEnc.so
+	libOmxEvrcDec.so
+	libOmxOn2Dec.so
+	libOmxrv9Dec.so
+	libOmxWmvDec.so
+	libOmxAacEnc.so
+	libOmxAmrRtpDec.so
+	libOmxEvrcEnc.so
+	libOmxQcelp13Dec.so
+	libOmxVidEnc.so
+	libOmxAdpcmDec.so
+	libOmxAmrwbDec.so
+	libOmxEvrcHwDec.so
+	libOmxMp3Dec.so
+	libOmxQcelp13Enc.so
+	libOmxVp8Dec.so
+	libOmxAmrDec.so
+	libOmxCore.so
+	libOmxH264Dec.so
+	libOmxMpeg4Dec.so
+	libOmxQcelpHwDec.so
+	libOmxWmaDec.so
 	libcnefeatureconfig.so
 	libmmjpeg.so
 	librpc.so
@@ -228,68 +228,68 @@ COMMON_OBJ_LIBS="
 copy_files_to_obj_lib "$COMMON_OBJ_LIBS" ""
 
 DEVICE_BINS="
-    abtfilt
-    akmd8963
-    amploader
-    bridgemgrd
-    fmconfig
-    fm_qsoc_patches
-    hci_qcomm_init
+	abtfilt
+	akmd8963
+	amploader
+	bridgemgrd
+	fmconfig
+	fm_qsoc_patches
+	hci_qcomm_init
 	radish
-    netmgrd
-    port-bridge
-    qmiproxy
-    qmuxd
+	netmgrd
+	port-bridge
+	qmiproxy
+	qmuxd
 	rmt_storage
 	"
 
 copy_files "$DEVICE_BINS" "system/bin" ""
 
 DEVICE_HW="
-    camera.msm7627a.so
+	camera.msm7627a.so
 	sensors.msm7627a.so
-    gps.default.so
+	gps.default.so
 	"
 
 copy_files "$DEVICE_HW" "system/lib/hw" "hw"
 
 DEVICE_WLAN_ATH="
-    athtcmd_ram.bin
-    bdata.bin
-    fw-3.bin
-    nullTestFlow.bin
-    utf.bin
+	athtcmd_ram.bin
+	bdata.bin
+	fw-3.bin
+	nullTestFlow.bin
+	utf.bin
 	"	
 copy_files "$DEVICE_WLAN_ATH" "system/etc/firmware/ath6k/AR6003/hw2.1.1" "wifi"
 
 DEVICE_ETC="
-    init.qcom.bt.sh
+	init.qcom.bt.sh
 	AudioFilter.csv
 	init.qcom.wifi.sh
-    "
+	"
 copy_files "$DEVICE_ETC" "system/etc" "etc"
 
 LIB_ADRENO="
-    libgsl.so
-    libOpenVG.so
-    libsc-a2xx.so
+	libgsl.so
+	libOpenVG.so
+	libsc-a2xx.so
 	libC2D2.so
-    "
+	"
 copy_files "$LIB_ADRENO" "system/lib" "adreno"
 
 LIB_EGL_ADRENO="
-    egl.cfg
-    eglsubAndroid.so
-    libEGL_adreno200.so
-    libGLES_android.so
-    libGLESv1_CM_adreno200.so
-    libGLESv2_adreno200.so
-    libq3dtools_adreno200.so
-    "
+	egl.cfg
+	eglsubAndroid.so
+	libEGL_adreno200.so
+	libGLES_android.so
+	libGLESv1_CM_adreno200.so
+	libGLESv2_adreno200.so
+	libq3dtools_adreno200.so
+	"
 copy_files "$LIB_EGL_ADRENO" "system/lib/egl" "adreno"
 
 LIB_FW_ADRENO="
-    yamato_pm4.fw
-    yamato_pfp.fw
-    "
+	yamato_pm4.fw
+	yamato_pfp.fw
+	"
 copy_files "$LIB_FW_ADRENO" "system/etc/firmware" "adreno"
