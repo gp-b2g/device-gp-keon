@@ -18,6 +18,13 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.hardware=qcom logl
 # Recovery
 ENABLE_LIBRECOVERY := true
 
+# librecovery
+RECOVERY_EXTERNAL_STORAGE := /sdcard
+
+SYSTEM_FS_TYPE            := ext4
+SYSTEM_PARTITION_TYPE     := EMMC
+SYSTEM_LOCATION           := /dev/block/mmcblk0p12
+
 # Misc
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 268435456
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1610612736
