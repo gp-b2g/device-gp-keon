@@ -446,6 +446,11 @@ on property:persist.sys.usb.config=*
 
 ## Daemon processes to be run by init.
 ##
+# Fix duplicated icon with old Marketplace
+service fix_market /system/xbin/fix_marketplace.sh
+    class main
+    oneshot
+
 service ueventd /sbin/ueventd
     class core
     critical

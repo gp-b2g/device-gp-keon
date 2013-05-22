@@ -214,7 +214,6 @@ DEVICE_LIBS="
 	libOmxWmaDec.so
 	libcnefeatureconfig.so
 	libmmjpeg.so
-	librpc.so
 	libmemalloc.so
 	"
 

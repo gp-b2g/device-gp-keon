@@ -11,7 +11,8 @@ PRODUCT_COPY_FILES := \
   device/geeksphone/keon/init/init.qcom.usb.rc:root/init.qcom.usb.rc \
   device/geeksphone/keon/init/ueventd.rc:root/ueventd.rc \
   device/geeksphone/keon/audio.conf:system/etc/bluetooth/audio.conf \
-  device/geeksphone/keon/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh
+  device/geeksphone/keon/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
+  device/geeksphone/keon/prebuilt/fix_marketplace.sh:system/xbin/fix_marketplace.sh
 
 $(call inherit-product-if-exists, vendor/geeksphone/keon/vendor-blobs.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
@@ -21,10 +22,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.moz.ril.emergency_by_default=true \
   ro.moz.omx.hw.max_width=640 \
   ro.moz.omx.hw.max_height=360 \
+  ro.display.colorfill=1 \
   ro.moz.fm.noAnalog=true
 
 PRODUCT_PACKAGES += \
-  librecovery
+  librecovery \
+  busybox
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_keon
