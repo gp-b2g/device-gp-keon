@@ -22,7 +22,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.moz.ril.emergency_by_default=true \
   ro.moz.omx.hw.max_width=640 \
   ro.moz.omx.hw.max_height=360 \
-  ro.display.colorfill=1 \
   ro.moz.fm.noAnalog=true
 
 PRODUCT_PACKAGES += \
