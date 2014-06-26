@@ -30,7 +30,7 @@ BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.hardware=qcom logl
 ENABLE_LIBRECOVERY := true
 
 # librecovery
-RECOVERY_EXTERNAL_STORAGE := /sdcard
+RECOVERY_EXTERNAL_STORAGE := /emmc
 
 SYSTEM_FS_TYPE            := ext4
 SYSTEM_PARTITION_TYPE     := EMMC
